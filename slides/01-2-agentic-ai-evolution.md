@@ -1,11 +1,8 @@
 ---
 layout: default
 title: "Agentic AI Evolution"
-order: 1.2
-parent: "01-whats-vibe-coding"
 ---
-
-# Agentic AI Evolution
+[Back →]({{ '/slides/01-whats-vibe-coding.md' | relative_url }})
 
 ## 🚀 The Journey of AI in Development
 
@@ -75,4 +72,4 @@ This timeline illustrates the rapid evolution of AI's role in software developme
 
 ---
 
-*Use the arrow keys to navigate between slides*
+[Next →]({{ '/slides/01-3-ai-adoption-impact.md' | relative_url }})

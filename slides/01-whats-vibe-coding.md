@@ -3,7 +3,7 @@ title: "What's Vibe Coding"
 order: 1
 layout: default
 ---
-# Vibe Coding
+[Home →]({{ '/' | relative_url }})
 
 > *"The practice of using AI code generation tools by engineers or use natural language to describe the outcome for the tool to then generate. Developers act as an orchestrator rather than coding line by line"*
 
@@ -56,4 +56,4 @@ Popular tools include **GitHub Copilot**, **Cursor IDE**, **Claude Desktop** wit
 
 ---
 
-*Use the arrow keys to navigate between slides*
+[Home →]({{ '/' | relative_url }})

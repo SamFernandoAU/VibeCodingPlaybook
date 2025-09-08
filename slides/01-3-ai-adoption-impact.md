@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "AI Adoption & Evolution"
-order: 1.3
-parent: "01-whats-vibe-coding"
 ---
 
 # AI Adoption & Evolution

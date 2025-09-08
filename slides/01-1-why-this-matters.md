@@ -4,11 +4,7 @@ title: "Why this matters?"
 order: 1.1
 parent: "01-whats-vibe-coding"
 ---
-
-# Why this matters?
-
-*AI-assisted coding is accelerating software delivery*  
-*New agentic development paradigms emerging*
+[Back →]({{ '/slides/01-whats-vibe-coding.md' | relative_url }})
 
 ## 🚀 The Acceleration
 
@@ -31,16 +27,7 @@ Think about your own teams — **how many hours have been saved by AI tools this
 
 > *"But while the AI can produce working code fast, accountability doesn't shift. The organisation and its developers are still responsible for security, compliance, and maintainability."*
 
-## 🎯 Focus Areas
-
-<div class="focus-areas">
-  <div class="focus-button">Team Readiness</div>
-  <div class="focus-button">Security</div>
-  <div class="focus-button">Compliance</div>
-  <div class="focus-button">Quality</div>
-</div>
-
 ---
 
-*Use the arrow keys to navigate between slides*
+[Next →]({{ '/slides/01-2-agentic-ai-evolution.md' | relative_url }})
 
