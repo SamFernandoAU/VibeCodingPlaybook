@@ -81,12 +81,12 @@ Successfully adopting AI-assisted development requires a structured approach tha
 
 ## 📚 Detailed Implementation Guides
 
-[**Step 01: Strategy & Alignment →**](/05-1-strategy-alignment/)  
-[**Step 02: Risk Management & Governance →**](/05-2-risk-management-governance/)  
-[**Step 03: Security & Compliance →**](/05-3-security-compliance/)  
-[**Step 04: Pilot & Training →**](/05-4-pilot-training/)  
-[**Step 05: Integration & Scaling →**](/05-5-integration-scaling/)  
-[**Step 06: Continuous Improvement →**](/05-6-continuous-improvement/)
+[**Step 01: Strategy & Alignment →**](/slides/05-1-strategy-alignment/)  
+[**Step 02: Risk Management & Governance →**](/slides/05-2-risk-management-governance/)  
+[**Step 03: Security & Compliance →**](/slides/05-3-security-compliance/)  
+[**Step 04: Pilot & Training →**](/slides/05-4-pilot-training/)  
+[**Step 05: Integration & Scaling →**](/slides/05-5-integration-scaling/)  
+[**Step 06: Continuous Improvement →**](/slides/05-6-continuous-improvement/)
 
 ---
 
