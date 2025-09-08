@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Best Practices"
 order: 3.2
 parent: "03-do-it-right"

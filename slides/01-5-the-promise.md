@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "The Promise of Vibe Coding"
 order: 1.5
 parent: "01-whats-vibe-coding"

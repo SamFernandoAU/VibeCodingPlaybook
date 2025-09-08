@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Continuous Improvement & Ethical Use"
 order: 5.6
 parent: "05-adoption-framework"

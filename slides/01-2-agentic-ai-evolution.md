@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Agentic AI Evolution"
 order: 1.2
 parent: "01-whats-vibe-coding"

@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Process & People"
 order: 3.3
 parent: "03-do-it-right"

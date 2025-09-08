@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Risk Management & Governance"
 order: 5.2
 parent: "05-adoption-framework"

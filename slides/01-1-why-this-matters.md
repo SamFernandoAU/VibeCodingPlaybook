@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Why this matters?"
 order: 1.1
 parent: "01-whats-vibe-coding"
