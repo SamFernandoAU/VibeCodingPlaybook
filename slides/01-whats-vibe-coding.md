@@ -20,38 +20,38 @@ Popular tools include **GitHub Copilot**, **Cursor IDE**, **Claude Desktop** wit
 
 ## 🤔 Why This Matters?
 
-[**Why this matters? →**](/slides/01-1-why-this-matters.html)
+[**Why this matters? →**]({{ '/slides/01-1-why-this-matters.html' | relative_url }})
 
 *AI-assisted coding is accelerating software delivery*  
 *New agentic development paradigms emerging*
 
 ## 📈 Evolution Timeline
 
-[**Agentic AI Evolution →**](01-2-agentic-ai-evolution.html)
+[**Agentic AI Evolution →**]({{ '/slides/01-2-agentic-ai-evolution.html' | relative_url }})
 
 *From productivity boosters to autonomous agents*
 
 ## 📊 Adoption Impact
 
-[**AI Adoption & Evolution →**](01-3-ai-adoption-impact.html)
+[**AI Adoption & Evolution →**]({{ '/slides/01-3-ai-adoption-impact.html' | relative_url }})
 
 *73% of organisations piloting AI, 86% reporting ROI growth*
 
 ## 📈 Developer Impact
 
-[**AI's Impact on Developers →**](01-4-ai-impact-on-dev.html)
+[**AI's Impact on Developers →**]({{ '/slides/01-4-ai-impact-on-dev.html' | relative_url }})
 
 *99% of developers saving time, 90% more productive with AI*
 
 ## ✨ The Promise
 
-[**The Promise of Vibe Coding →**](01-5-the-promise.html)
+[**The Promise of Vibe Coding →**]({{ '/slides/01-5-the-promise.html' | relative_url }})
 
 *Faster delivery, reduced repetitive coding, and accelerated innovation*
 
 ## 🔄 Development is Changing
 
-[**Software Development is Changing →**](01-6-software-dev-changing.html)
+[**Software Development is Changing →**]({{ '/slides/01-6-software-dev-changing.html' | relative_url }})
 
 *99% of developers saving time, 90% more productive with AI*
 

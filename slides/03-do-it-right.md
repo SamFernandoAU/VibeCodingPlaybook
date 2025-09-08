@@ -45,25 +45,25 @@ Let's dive into the practical steps to make vibe coding work for your organisati
 
 ## 🏠 AI Agent House Rules
 
-[**AI Agent House Rules →**](/slides/03-1-ai-agent-house-rules.html)
+[**AI Agent House Rules →**]({{ '/slides/03-1-ai-agent-house-rules.html' | relative_url }})
 
 *Guidelines for effective and responsible AI agent use*
 
 ## ✅ Best Practices
 
-[**Best Practices →**](/slides/03-1-best-practices.html)
+[**Best Practices →**]({{ '/slides/03-1-best-practices.html' | relative_url }})
 
 *How to vibe code effectively*
 
 ## 🏢 Process & People
 
-[**Process & People →**](/slides/03-2-process-people.html)
+[**Process & People →**]({{ '/slides/03-2-process-people.html' | relative_url }})
 
 *organisational foundation for vibe coding success*
 
 ## 📝 Instruction Examples
 
-[**Instruction Examples →**](/slides/03-3-instruction-examples.html)
+[**Instruction Examples →**]({{ '/slides/03-3-instruction-examples.html' | relative_url }})
 
 *Crafting effective AI instructions for better outcomes*
 
