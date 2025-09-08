@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Integration & Scaling"
 order: 5.5
 parent: "05-adoption-framework"

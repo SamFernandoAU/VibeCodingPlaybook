@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Security & Compliance"
 order: 5.3
 parent: "05-adoption-framework"

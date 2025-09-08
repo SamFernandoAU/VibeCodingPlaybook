@@ -1,11 +1,8 @@
 ---
-layout: slide
+layout: default
 title: "Common Habits"
 order: 2
 ---
-
-# Common Habits
-
 ## ⚠️ The Reality of Vibe Coding Adoption
 
 Every new paradigm comes with enthusiasm — but also with mistakes. With vibe coding, I see the same patterns repeating across teams.

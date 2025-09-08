@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Enterprise Alignment"
 order: 4
 ---

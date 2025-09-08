@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Do it right!"
 order: 3
 ---

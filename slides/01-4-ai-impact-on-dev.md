@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "AI's Impact on Developers"
 order: 1.4
 parent: "01-whats-vibe-coding"

@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Strategy & Alignment"
 order: 5.1
 parent: "05-adoption-framework"

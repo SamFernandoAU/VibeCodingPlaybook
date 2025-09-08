@@ -1,9 +1,8 @@
 ---
-layout: slide
 title: "What's Vibe Coding"
 order: 1
+layout: default
 ---
-
 # Vibe Coding
 
 > *"The practice of using AI code generation tools by engineers or use natural language to describe the outcome for the tool to then generate. Developers act as an orchestrator rather than coding line by line"*

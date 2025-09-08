@@ -1,7 +1,7 @@
 ---
-layout: slide
 title: "Adoption Framework"
 order: 5
+layout: default
 ---
 
 # Adoption Framework

@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Software Development is Changing"
 order: 1.6
 parent: "01-whats-vibe-coding"

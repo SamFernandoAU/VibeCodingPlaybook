@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Real Risks"
 order: 2.1
 parent: "02-common-habits"

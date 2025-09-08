@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "DevSecOps Strategies for Safe AI Use"
 order: 4.1
 parent: "04-enterprise-alignment"

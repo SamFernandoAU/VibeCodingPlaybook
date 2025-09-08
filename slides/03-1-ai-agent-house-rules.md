@@ -1,6 +1,6 @@
 ---
-layout: slide
-title: "AI Agent House Rules"
+layout: default
+ title: "AI Agent House Rules"
 order: 3.1
 parent: "03-do-it-right"
 ---

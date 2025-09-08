@@ -1,5 +1,5 @@
 ---
-layout: slide
+layout: default
 title: "Pilot & Training"
 order: 5.4
 parent: "05-adoption-framework"
