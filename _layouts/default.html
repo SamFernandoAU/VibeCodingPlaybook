@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <div class="presentation-container">
+        <header class="slide-header">
+            <h1>{{ page.title }}</h1>
+            {% if page.subtitle %}
+            <p class="subtitle">{{ page.subtitle }}</p>
+            {% endif %}
+        </header>
+        
+        <main class="slide-content">
+            {{ content }}
+        </main>
+        
+        {% include footer.html %}
+    </div>
+    
+    <script src="{{ '/assets/js/presentation.js' | relative_url }}"></script>
+</body>
+</html>
