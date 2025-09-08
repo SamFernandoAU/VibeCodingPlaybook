@@ -4,21 +4,56 @@ title: "What's Vibe Coding"
 order: 1
 ---
 
-# What's Vibe Coding?
+# Vibe Coding
 
-## Definition
-*[Content from your presentation - add the actual definition here]*
+> *"The practice of using AI code generation tools by engineers or use natural language to describe the outcome for the tool to then generate. Developers act as an orchestrator rather than coding line by line"*
 
-## Key Concepts
-- [Concept 1 - add your content]
-- [Concept 2 - add your content]
-- [Concept 3 - add your content]
+## 🎯 The Shift in Development
 
-## Why It Matters
-*[Benefits and importance - add your content]*
+**When we say vibe coding, we're talking about using AI assistants not just as autocomplete, but as active co-developers.** It's agentic development — where the developer guides with prompts, and the AI fills in large chunks of functionality.
 
-## Core Principles
-*[List the core principles of Vibe Coding]*
+**Instead of writing code line by line, teams are now describing intent** — *'build me an API endpoint that does X'* — and the AI generates code, scaffolding, and even tests. The developer becomes more of a conductor, orchestrating and reviewing.
+
+## 🛠️ Popular Tools
+
+Popular tools include **GitHub Copilot**, **Cursor IDE**, **Claude Desktop** with Model Context Protocol, and **AWS CodeWhisperer**. They make vibe coding accessible to any developer today.
+
+## 🤔 Why This Matters?
+
+[**Why this matters? →**](01-1-why-this-matters.html)
+
+*AI-assisted coding is accelerating software delivery*  
+*New agentic development paradigms emerging*
+
+## 📈 Evolution Timeline
+
+[**Agentic AI Evolution →**](01-2-agentic-ai-evolution.html)
+
+*From productivity boosters to autonomous agents*
+
+## 📊 Adoption Impact
+
+[**AI Adoption & Evolution →**](01-3-ai-adoption-impact.html)
+
+*73% of organisations piloting AI, 86% reporting ROI growth*
+
+## 📈 Developer Impact
+
+[**AI's Impact on Developers →**](01-4-ai-impact-on-dev.html)
+
+*99% of developers saving time, 90% more productive with AI*
+
+## ✨ The Promise
+
+[**The Promise of Vibe Coding →**](01-5-the-promise.html)
+
+*Faster delivery, reduced repetitive coding, and accelerated innovation*
+
+## 🔄 Development is Changing
+
+[**Software Development is Changing →**](01-6-software-dev-changing.html)
+
+*99% of developers saving time, 90% more productive with AI*
 
 ---
 

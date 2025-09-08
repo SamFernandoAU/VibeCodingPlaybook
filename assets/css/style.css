@@ -150,6 +150,124 @@ body {
     color: var(--accent-teal);
 }
 
+/* Focus Areas Styling */
+.focus-areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.focus-button {
+    background: rgba(30, 58, 138, 0.8);
+    color: var(--text-white);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.focus-button:hover {
+    background: var(--accent-teal);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-color: var(--secondary-blue);
+}
+
+/* Timeline Styling */
+.timeline-stage {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--accent-teal);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+}
+
+.timeline-stage:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.timeline-stage h3 {
+    color: var(--accent-teal);
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.timeline-stage h4 {
+    color: var(--secondary-blue);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.timeline-stage ul {
+    margin-left: 1rem;
+}
+
+.timeline-stage li {
+    margin-bottom: 0.5rem;
+    color: var(--text-white);
+}
+
+.timeline-stage strong {
+    color: var(--accent-teal);
+}
+
+/* Adoption Metrics Styling */
+.adoption-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.metric-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.metric-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    border-color: var(--accent-teal);
+}
+
+.metric-card h3 {
+    color: var(--accent-teal);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.metric-card p {
+    color: var(--text-white);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+.percentage {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--secondary-blue);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-top: 0.5rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .slide-header h1 {
@@ -176,5 +294,841 @@ body {
     
     .slide h2 {
         font-size: 1.5rem;
+    }
+    
+    .focus-areas {
+        grid-template-columns: 1fr;
+    }
+    
+    .adoption-metrics {
+        grid-template-columns: 1fr;
+    }
+    
+    .metric-card {
+        padding: 1rem;
+    }
+    
+    .percentage {
+        font-size: 2rem;
+    }
+}
+
+/* Promise List Styling */
+.promise-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.promise-item {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.promise-item:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    border-color: var(--secondary-blue);
+}
+
+.promise-item h3 {
+    color: var(--accent-teal);
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.promise-item p {
+    color: var(--text-white);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive for promise list */
+@media (max-width: 768px) {
+    .promise-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .promise-item h3 {
+        font-size: 1.2rem;
+    }
+    
+    .promise-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Impact Metrics Styling */
+.impact-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.impact-card {
+    background: rgba(59, 130, 246, 0.15);
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 150px;
+}
+
+.impact-card:hover {
+    background: rgba(59, 130, 246, 0.25);
+    border-color: var(--accent-teal);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.impact-card .percentage {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--secondary-blue);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.impact-card p {
+    color: var(--text-white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    line-height: 1.3;
+}
+
+.impact-card .source {
+    color: var(--accent-teal);
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+/* Responsive for impact metrics */
+@media (max-width: 768px) {
+    .impact-metrics {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-card {
+        padding: 1.5rem;
+        min-height: 120px;
+    }
+    
+    .impact-card .percentage {
+        font-size: 2.5rem;
+    }
+    
+    .impact-card p {
+        font-size: 1rem;
+    }
+}
+
+/* Habit List Styling */
+.habit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.habit-item {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(6, 182, 212, 0.2) 100%);
+    border: 2px solid rgba(59, 130, 246, 0.4);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.habit-item:hover {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(6, 182, 212, 0.3) 100%);
+    border-color: var(--accent-teal);
+    transform: translateX(10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.habit-item h3 {
+    color: var(--accent-teal);
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 700;
+    min-width: 200px;
+    flex-shrink: 0;
+}
+
+.habit-item p {
+    color: var(--text-white);
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* Responsive for habit list */
+@media (max-width: 768px) {
+    .habit-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .habit-item h3 {
+        min-width: auto;
+        font-size: 1.1rem;
+    }
+    
+    .habit-item p {
+        font-size: 1rem;
+    }
+}
+
+/* Risk List Styling */
+.risk-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.risk-item {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(220, 38, 38, 0.15) 100%);
+    border: 2px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.risk-item:hover {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.25) 0%, rgba(220, 38, 38, 0.25) 100%);
+    border-color: #ef4444;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.2);
+}
+
+.risk-item h3 {
+    color: #ef4444;
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.risk-item p {
+    color: var(--text-white);
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Responsive for risk list */
+@media (max-width: 768px) {
+    .risk-item h3 {
+        font-size: 1.2rem;
+    }
+    
+    .risk-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Solution Preview Styling */
+.solution-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.solution-card {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
+    border: 2px solid rgba(34, 197, 94, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 120px;
+}
+
+.solution-card:hover {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.25) 0%, rgba(16, 185, 129, 0.25) 100%);
+    border-color: #22c55e;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.2);
+}
+
+.solution-card h3 {
+    color: #22c55e;
+    font-size: 1.3rem;
+    margin: 0 0 0.8rem 0;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.solution-card p {
+    color: var(--text-white);
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* Responsive for solution preview */
+@media (max-width: 768px) {
+    .solution-preview {
+        grid-template-columns: 1fr;
+    }
+    
+    .solution-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .solution-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* House Rules Grid Styling */
+.house-rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.rule-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.rule-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    border-color: var(--accent-teal);
+}
+
+.rule-card h3 {
+    color: var(--accent-teal);
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.rule-card p {
+    color: var(--text-white);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Responsive Design for House Rules */
+@media (max-width: 768px) {
+    .house-rules-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .rule-card {
+        padding: 1rem;
+    }
+    
+    .rule-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .rule-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Process & People Grid Styling */
+.process-people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.pillar-card {
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+    border: 2px solid rgba(168, 85, 247, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.pillar-card:hover {
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.25) 0%, rgba(139, 92, 246, 0.25) 100%);
+    border-color: #a855f7;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(168, 85, 247, 0.2);
+}
+
+.pillar-card h3 {
+    color: #a855f7;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.pillar-card p {
+    color: var(--text-white);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Responsive Design for Process & People */
+@media (max-width: 768px) {
+    .process-people-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pillar-card {
+        padding: 1rem;
+    }
+    
+    .pillar-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .pillar-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Instruction Examples Grid Styling */
+.instruction-examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.instruction-card {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
+    border: 2px solid rgba(34, 197, 94, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.instruction-card:hover {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.25) 0%, rgba(16, 185, 129, 0.25) 100%);
+    border-color: #22c55e;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.2);
+}
+
+.instruction-card h3 {
+    color: #22c55e;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.instruction-card p {
+    color: var(--text-white);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Responsive Design for Instruction Examples */
+@media (max-width: 768px) {
+    .instruction-examples-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .instruction-card {
+        padding: 1rem;
+    }
+    
+    .instruction-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .instruction-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Alignment Challenge Styling */
+.alignment-challenge {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.challenge-item {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(220, 38, 38, 0.15) 100%);
+    border: 2px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.challenge-item:hover {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.25) 0%, rgba(220, 38, 38, 0.25) 100%);
+    border-color: #ef4444;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.2);
+}
+
+.challenge-item h3 {
+    color: #ef4444;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.challenge-item p {
+    color: var(--text-white);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Responsive Design for Alignment Challenge */
+@media (max-width: 768px) {
+    .alignment-challenge {
+        grid-template-columns: 1fr;
+    }
+    
+    .challenge-item {
+        padding: 1rem;
+    }
+    
+    .challenge-item h3 {
+        font-size: 1.2rem;
+    }
+    
+    .challenge-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* DevSecOps Strategies Styling */
+.devsecops-strategies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.strategy-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.strategy-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--accent-teal);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.strategy-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.strategy-card h3 {
+    color: var(--accent-teal);
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+}
+
+.strategy-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.strategy-card li {
+    color: var(--text-white);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.strategy-card li:before {
+    content: "•";
+    color: var(--accent-teal);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.strategy-card strong {
+    color: var(--secondary-blue);
+    font-weight: 600;
+}
+
+/* Responsive Design for DevSecOps Strategies */
+@media (max-width: 768px) {
+    .devsecops-strategies {
+        grid-template-columns: 1fr;
+    }
+    
+    .strategy-card {
+        padding: 1rem;
+    }
+    
+    .strategy-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .strategy-card li {
+        font-size: 0.85rem;
+    }
+}
+
+/* Adoption Timeline Styling */
+.adoption-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.timeline-step {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.timeline-step:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--accent-teal);
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.step-number {
+    background: linear-gradient(135deg, var(--accent-teal) 0%, var(--secondary-blue) 100%);
+    color: var(--text-white);
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+}
+
+.timeline-step h3 {
+    color: var(--accent-teal);
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+}
+
+.timeline-step p {
+    color: var(--text-white);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Alternating layout for visual interest */
+.step-1, .step-3, .step-5 {
+    margin-left: 0;
+}
+
+.step-2, .step-4, .step-6 {
+    margin-left: 2rem;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    border-color: rgba(168, 85, 247, 0.3);
+}
+
+.step-2:hover, .step-4:hover, .step-6:hover {
+    border-color: #a855f7;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+}
+
+/* Responsive Design for Adoption Timeline */
+@media (max-width: 768px) {
+    .adoption-timeline {
+        gap: 1.5rem;
+    }
+    
+    .timeline-step {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        margin-left: 0 !important;
+    }
+    
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .timeline-step h3 {
+        font-size: 1.2rem;
+    }
+    
+    .timeline-step p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Child Page Styling for Adoption Framework */
+.objective-card, .assessment-grid, .use-case-priority, .governance-structure, .committee-card, .policy-framework, .policy-category, .risk-workflow, .workflow-step, .security-scanning, .scanning-tool, .access-control, .control-principle, .monitoring-framework, .monitoring-area, .compliance-standards, .standard-item, .pilot-framework, .pilot-phase, .training-curriculum, .training-module, .feedback-system, .feedback-channel, .success-metrics, .metric-category, .integration-areas, .integration-point, .policy-automation, .automation-layer, .scaling-framework, .scaling-phase, .scaling-metrics, .metric-area, .policy-evolution, .evolution-cycle, .ethical-monitoring, .ethical-dimension, .cultural-framework, .cultural-pillar, .improvement-metrics, .future-readiness, .readiness-area {
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.objective-card:hover, .assessment-grid:hover, .use-case-priority:hover, .governance-structure:hover, .committee-card:hover, .policy-framework:hover, .policy-category:hover, .risk-workflow:hover, .workflow-step:hover, .security-scanning:hover, .scanning-tool:hover, .access-control:hover, .control-principle:hover, .monitoring-framework:hover, .monitoring-area:hover, .compliance-standards:hover, .standard-item:hover, .pilot-framework:hover, .pilot-phase:hover, .training-curriculum:hover, .training-module:hover, .feedback-system:hover, .feedback-channel:hover, .success-metrics:hover, .metric-category:hover, .integration-areas:hover, .integration-point:hover, .policy-automation:hover, .automation-layer:hover, .scaling-framework:hover, .scaling-phase:hover, .scaling-metrics:hover, .metric-area:hover, .policy-evolution:hover, .evolution-cycle:hover, .ethical-monitoring:hover, .ethical-dimension:hover, .cultural-framework:hover, .cultural-pillar:hover, .improvement-metrics:hover, .future-readiness:hover, .readiness-area:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--accent-teal);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Grid layouts for child pages */
+.assessment-grid, .use-case-priority, .governance-structure, .policy-framework, .security-scanning, .access-control, .monitoring-framework, .compliance-standards, .pilot-framework, .training-curriculum, .feedback-system, .success-metrics, .integration-areas, .policy-automation, .scaling-framework, .scaling-metrics, .policy-evolution, .ethical-monitoring, .cultural-framework, .improvement-metrics, .future-readiness {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+/* Priority items styling */
+.priority-item.high {
+    border-left: 4px solid #ef4444;
+}
+
+.priority-item.medium {
+    border-left: 4px solid #f59e0b;
+}
+
+.priority-item.low {
+    border-left: 4px solid #10b981;
+}
+
+/* Workflow step styling */
+.workflow-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.workflow-step .step-number {
+    background: var(--accent-teal);
+    color: var(--text-white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Responsive design for child pages */
+@media (max-width: 768px) {
+    .assessment-grid, .use-case-priority, .governance-structure, .policy-framework, .security-scanning, .access-control, .monitoring-framework, .compliance-standards, .pilot-framework, .training-curriculum, .feedback-system, .success-metrics, .integration-areas, .policy-automation, .scaling-framework, .scaling-metrics, .policy-evolution, .ethical-monitoring, .cultural-framework, .improvement-metrics, .future-readiness {
+        grid-template-columns: 1fr;
+    }
+    
+    .workflow-step {
+        flex-direction: column;
+        text-align: center;
     }
 }
