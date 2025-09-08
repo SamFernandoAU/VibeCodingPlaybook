@@ -14,12 +14,12 @@ author: "Sam Fernando"
 
 ## What's in it for you
 
-1. **[What's Vibe Coding](/01-whats-vibe-coding/)**
-2. **[Common habits](/02-common-habits/)**
-3. **[Do it right!](/03-do-it-right/)**
-4. **[Enterprise alignment](/04-enterprise-alignment/)**
-5. **[Adoption framework](/05-adoption-framework/)**
+1. **[What's Vibe Coding](/slides/01-whats-vibe-coding/)**
+2. **[Common habits](/slides/02-common-habits/)**
+3. **[Do it right!](/slides/03-do-it-right/)**
+4. **[Enterprise alignment](/slides/04-enterprise-alignment/)**
+5. **[Adoption framework](/slides/05-adoption-framework/)**
 
 ---
 
-[Start Presentation →](/01-whats-vibe-coding/)
+[Start Presentation →](/slides/01-whats-vibe-coding/)
