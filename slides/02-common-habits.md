@@ -62,7 +62,7 @@ Finally, there's the human side. If juniors rely on AI for every solution, they 
 
 ## ⚠️ Real Risks
 
-[**Real Risks →**](/slides/02-1-real-risks.html)
+[**Real Risks →**]({{ '/slides/02-1-real-risks.html' | relative_url }})
 
 *When mistakes become habits, they translate into real business risks*
 

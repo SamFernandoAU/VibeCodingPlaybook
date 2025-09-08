@@ -49,7 +49,7 @@ We need to **reimagine enterprise development** to embrace AI while maintaining:
 
 ## 🛡️ DevSecOps Strategies
 
-[**DevSecOps Strategies for Safe AI Use →**](/slides/04-1-devsecops-strategies.html)
+[**DevSecOps Strategies for Safe AI Use →**]({{ '/slides/04-1-devsecops-strategies.html' | relative_url }})
 
 *Framework components for safer AI use in software development teams*
 
