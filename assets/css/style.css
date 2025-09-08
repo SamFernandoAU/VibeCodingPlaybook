@@ -7,18 +7,19 @@
     --gradient-start: #1e3a8a;
     --gradient-end: #7c3aed;
 }
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
-    color: var(--text-white);
-    margin: 0;
+    --background-dark: #181a1b;
+    --background-panel: #23272a;
+    --text-main: #f5f6fa;
+    --text-secondary: #b0b3b8;
+    --accent: #00bcd4;
+    --accent-hover: #0097a7;
+    --border: #33373a;
     padding: 0;
     min-height: 100vh;
 }
 
-.presentation-container {
-    max-width: 1200px;
+    background: var(--background-dark);
+    color: var(--text-main);
     margin: 0 auto;
     padding: 2rem;
 }
@@ -28,31 +29,35 @@ body {
     font-weight: bold;
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
+    color: var(--accent);
+    text-shadow: none;
 
 .subtitle {
     font-size: 1.2rem;
     opacity: 0.9;
     margin-bottom: 2rem;
 }
-
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
 .slide-content {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border-radius: 15px;
+    background: var(--background-panel);
+    border-radius: 12px;
     padding: 2rem;
     margin: 2rem 0;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-}
-
-.slide-navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(255,255,255,0.2);
-}
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    :root {
+        --background-dark: #181a1b;
+        --background-panel: #23272a;
+    background: var(--accent);
+    color: var(--text-main);
+        --accent: #00bcd4;
+        --accent-hover: #0097a7;
+        --border: #33373a;
+    }
 
 .nav-button {
     background: var(--accent-teal);
@@ -61,116 +66,60 @@ body {
     border-radius: 25px;
     text-decoration: none;
     font-weight: 600;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-}
-
-.nav-button:hover {
-    background: var(--secondary-blue);
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: var(--background-dark);
+    background: var(--accent);
+    color: #fff;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-.main-navigation {
-    margin-bottom: 2rem;
-}
-
-.main-navigation ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.main-navigation a {
-    color: var(--text-white);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    .presentation-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    .slide-header h1 {
+        font-size: 3rem;
+        font-weight: bold;
+    color: var(--accent);
+        color: var(--accent);
+        text-shadow: none;
+    }
     transition: all 0.3s ease;
-}
+}   
 
 .main-navigation a:hover {
     background: var(--accent-teal);
+    .subtitle {
+        font-size: 1.2rem;
+.focus-button:hover {
+    background: var(--accent-hover);
     transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        background: var(--background-panel);
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 2rem 0;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    }
 }
 
-.presentation-footer {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    text-align: center;
-    opacity: 0.8;
-}
-
-.footer-content p {
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-}
-
-/* Slide specific styles */
-.slide h1 {
-    color: var(--accent-teal);
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.slide h2 {
+    color: var(--accent);
     color: var(--secondary-blue);
     font-size: 2rem;
     margin-bottom: 1rem;
-}
-
-.slide h3 {
-    color: var(--text-white);
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.slide ul, .slide ol {
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-}
-
-.slide li {
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
-}
-
-.slide p {
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.slide strong {
-    color: var(--accent-teal);
-}
-
-/* Focus Areas Styling */
-.focus-areas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin: 2rem 0;
-}
-
-.focus-button {
-    background: rgba(30, 58, 138, 0.8);
-    color: var(--text-white);
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: 600;
+    /* Slide specific styles */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        background: var(--accent-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
     font-size: 1.1rem;
     transition: all 0.3s ease;
     border: 2px solid transparent;
-    cursor: pointer;
-}
-
+    .main-navigation {
+        margin-bottom: 2rem;
+    }
 .focus-button:hover {
     background: var(--accent-teal);
     transform: translateY(-2px);
@@ -179,14 +128,14 @@ body {
 }
 
 /* Timeline Styling */
-.timeline-stage {
-    background: rgba(255, 255, 255, 0.05);
-    border-left: 4px solid var(--accent-teal);
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    border-radius: 0 8px 8px 0;
-    transition: all 0.3s ease;
-}
+    .main-navigation ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 
 .timeline-stage:hover {
     background: rgba(255, 255, 255, 0.1);
@@ -195,22 +144,23 @@ body {
 }
 
 .timeline-stage h3 {
-    color: var(--accent-teal);
-    margin-bottom: 0.5rem;
-    font-size: 1.4rem;
-}
-
-.timeline-stage h4 {
-    color: var(--secondary-blue);
-    margin-bottom: 1rem;
+    .main-navigation a {
+        color: var(--text-main);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        background: var(--background-panel);
+        transition: all 0.3s ease;
+    }
     font-size: 1rem;
     font-weight: 600;
 }
 
-.timeline-stage ul {
-    margin-left: 1rem;
-}
-
+    .main-navigation a:hover {
+        background: var(--accent);
+        color: #fff;
+        transform: translateY(-2px);
+    }
 .timeline-stage li {
     margin-bottom: 0.5rem;
     color: var(--text-white);
@@ -218,52 +168,53 @@ body {
 
 .timeline-stage strong {
     color: var(--accent-teal);
-}
-
-/* Adoption Metrics Styling */
-.adoption-metrics {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    .presentation-footer {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border);
+        text-align: center;
+        opacity: 0.8;
+    }
     margin: 2rem 0;
 }
 
 .metric-card {
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.metric-card:hover {
-    background: rgba(255, 255, 255, 0.12);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    border-color: var(--accent-teal);
-}
-
-.metric-card h3 {
-    color: var(--accent-teal);
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-}
-
-.metric-card p {
-    color: var(--text-white);
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-    line-height: 1.4;
-    opacity: 0.9;
-}
-
-.percentage {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--secondary-blue);
+    .footer-content p {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+    }
+    /* Slide specific styles */
+    .slide h1 {
+        color: var(--accent);
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .slide h2 {
+        color: var(--accent);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .slide h3 {
+        color: var(--text-main);
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+    .slide ul, .slide ol {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    .slide li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+    .slide p {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+    .slide strong {
+        color: var(--accent);
+    }
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     margin-top: 0.5rem;
 }
