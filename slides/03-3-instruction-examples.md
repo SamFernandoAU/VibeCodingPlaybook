@@ -1,7 +1,7 @@
 ---
 layout: slide
 title: "Instruction Examples"
-order: 3.3
+order: 3.4
 parent: "03-do-it-right"
 ---
 

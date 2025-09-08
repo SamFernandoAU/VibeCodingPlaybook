@@ -1,7 +1,7 @@
 ---
 layout: slide
 title: "Best Practices"
-order: 3.1
+order: 3.2
 parent: "03-do-it-right"
 ---
 
